@@ -1,5 +1,5 @@
 <?php
-	function fourth($num)
+	function fourth($num) //calculated the fourth degree of the $num
 	{
 		return ($num * $num * $num * $num);
 	}
