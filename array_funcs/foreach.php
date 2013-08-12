@@ -9,4 +9,15 @@
 	}
 	print "new values!\n";
 	print_r($numArray);
+
+	$a = array(
+		"keys:" => "values:",
+    "first_Value" => 1,
+    "second_Value" => 2,
+    "third_Value" => 3,
+    "Seventin_(key)" => 17
+);
+	foreach ($a as $key => $value) {
+		print "\$a[$key] => $value \n";
+	}
 ?>
