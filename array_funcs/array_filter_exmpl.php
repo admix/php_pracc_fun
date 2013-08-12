@@ -20,5 +20,34 @@ $newNames = array_filter($arrayOfNames, function($name){
 print "Names with 'a' in the end!\n";
 print_r($newNames);
 
+
+/* Simple example "filtering only even numbers"*/
+
+function even($num){
+	if($num % 2 == 0){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+$arrayOfNumbers = array(1,2,3,4,5,6,7,8,9,10,11,134,112,223,543,123,98,26);
+
+$evenNumbers = array_filter($arrayOfNumbers,"even");
+print "Even Numbers:\n";
+print_r($evenNumbers);
+
+function odd($num){
+	if($num % 2 != 0){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+$oddNumbers = array_filter($arrayOfNumbers,"odd");
+print "Odd Numbers:\n";
+print_r($oddNumbers);
 ?>
 
